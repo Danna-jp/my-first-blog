@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>資産除去債務</title>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    </head>
+    <body>
+        <div>
+            <h3>全経上級189回商業問2-4</h3>
+            <p>
+                建物のうち5000千円は当期首に使用を始めた物流センターの取得価額であるが,これに関す<br>
+                る情報は下記のとおりである。<br>
+                １）使用開始15年後に更地にして返還する契約を地主と結んだ土地に建設をした。借地権は発生<br>
+                しない。<br>
+                ２）撤去費用は1000千円と見積もられ、資産除去債務の計算に使用する利子率は１％と決定し<br>
+                たが、まだ記帳していない。<br>
+                ３）割引率１％、15年で計算される現価係数は0.861である。<br>
+                ４)資産除去債務に関連する会計処理では、税効果を考慮しなくてよい。<br>
+                ５）利息部分の費用計上科目は資産除去債務調整額とする。<br>        
+            </p>
+        </div>
+        
+        {% for post in posts %}
+            <div>
+                <p>published: {{ post.published_date }}</p>
+                <h1><a href="">{{ post.title }}</a></h1>
+                <p>{{ post.text|linebreaksbr }}</p>
+            </div>
+        {% endfor %}
+    </body>
+</html>
